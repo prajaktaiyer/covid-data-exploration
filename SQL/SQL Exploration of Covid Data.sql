@@ -28,7 +28,7 @@ GROUP BY Location,population
 --WHERE location like '%India%'
 ORDER BY PercentPopulationInfected desc
 
----Showing coyuntries with the highest death count per population
+---Showing countries with the highest death count per population
 SELECT location,MAX(cast(total_deaths as int)) as TotalDeathCount
 FROM CovidDeaths
 WHERE continent is null
